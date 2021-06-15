@@ -69,7 +69,9 @@ jobs:
           cat >> .config <<EOF
           CONFIG_TARGET_ipq40xx=y
           CONFIG_TARGET_ipq40xx_generic=y
-          CONFIG_TARGET_ipq40xx_generic_DEVICE_netgear_ex6150v2=y 
+          CONFIG_TARGET_ipq40xx_generic_DEVICE_netgear_ex6150v2=y
+          CONFIG_TARGET_KERNEL_PARTSIZE=4
+          CONFIG_TARGET_ROOTFS_PARTSIZE=10
           CONFIG_KERNEL_BUILD_USER="OpenWrt-CI"
           CONFIG_KERNEL_BUILD_DOMAIN="Azure"
           EOF
